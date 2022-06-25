@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://github.com/vishalbrdr/product-preview-card-component)
-- Live Site URL: [Gh pages](https://vishalbrdr-product-card-component.netlify.app/)
+- Solution URL: [Github](https://github.com/vishalbrdr/product-preview-card-component)
+- Live Site URL: [Netlify](https://vishalbrdr-product-card-component.netlify.app/)
 
 ## My process
 
