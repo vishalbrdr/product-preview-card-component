@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --font-head: "Fraunces", serif;
+  --font-body: "Montserrat", sans-serif;
+  --clr-dark-cyan: hsl(158, 36%, 37%);
+  --clr-hover-dark-cyan: hsl(158, 36%, 23%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-very-dark-blue: hsl(212, 21%, 14%);
+  --clr-dark-grayish-blue: hsl(228, 12%, 48%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  font-size: 1.4rem;
+  background-color: var(--clr-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-body);
+  justify-content: center;
+}
+.card {
+  display: flex;
+  height: 45rem;
+  width: 60rem;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  .image {
+    width: 50%;
+    height: 100%;
+    flex-grow: 2;
+    background-image: url(../../images/image-product-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .body {
+    flex-grow: 1;
+    width: 50%;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 3rem;
+    align-content: start;
+    color: var(--clr-dark-grayish-blue);
+
+    .subheading {
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+    }
+    .heading {
+      font-family: var(--font-head);
+      font-weight: bolder;
+      line-height: 1.1;
+      color: var(--clr-very-dark-blue);
+    }
+    .text {
+      line-height: 1.5;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      &-discounted {
+        font-family: var(--font-head);
+        font-size: 3rem;
+        color: var(--clr-dark-cyan);
+      }
+      &-actual {
+        text-decoration: line-through;
+      }
+    }
+    .btn-cart {
+      background-color: var(--clr-dark-cyan);
+      color: var(--clr-white);
+      padding-block: 1.5rem;
+      border: none;
+      border-radius: 0.5em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      font-weight: bold;
+      transition: backgound-color 150ms ease-in-out;
+      &:hover {
+        background-color: var(--clr-hover-dark-cyan);
+      }
+    }
+  }
+}
+.attribution {
+  margin-top: 5rem;
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-dark-grayish-blue);
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--clr-dark-cyan);
+  font-family: var(--font-head);
+  &:hover {
+    color: var(--clr-very-dark-blue);
+  }
+}
